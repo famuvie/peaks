@@ -28,8 +28,10 @@ peaks <- function(x, span.abs, threshold = 0) {
 
 #' Identify peaks
 #' 
-#' @inheritParams peaks
 #' Original function from package \code{ppc}
+#' 
+#' @param x a numeric vector
+#' @param span NUMERIC the \emph{relative} number of points defining the window
 ppc.peaks <- function(x,span){
   
   

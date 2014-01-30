@@ -14,5 +14,6 @@ Description: This simple package provides a function peaks() for the
 License: GPL-3
 Depends:
     R (>= 2.10)
-Suggest: ggplot2
+Suggest: ggplot2, knitr
 URL: https://github.com/famuvie/peaks
+VignetteBuilder: knitr
