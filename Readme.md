@@ -10,8 +10,8 @@ This simple package provides a function peaks() for the identification of local 
 
 ##### First time only
 - Install [R](http://cran.r-project.org/ "CRAN")
-- If you work under MS Windows platform
-  - Install `RTools` from CRAN as well
+- If you work under MS Windows platform, please don't. But if you insist,
+  - Install [`RTools`](http://cran.r-project.org/bin/windows/Rtools/) from CRAN as well
 - Install the `devtools` R-package
   - `install.packages('devtools')`
 
