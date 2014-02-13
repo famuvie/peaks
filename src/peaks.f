@@ -17,7 +17,12 @@ C Output from Public domain Ratfor, version 1.0
       j=i-ispan2
 23006 if((ans(i).eq.1).and.(j.le.(i+ispan2)))then
       if(x(j).ge.x(i))then
+      if(x(j).gt.x(i))then
+      ans(i)=0      
+      endif
+      if(j.gt.i)then
       ans(i)=0
+      endif
       endif
       j=j+1
       if(j.eq.i)then
