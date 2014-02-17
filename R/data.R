@@ -1,17 +1,19 @@
-#' Wood density profile
+#' Wood density profiles
 #' 
-#' A sample profile of wood density with several rings
+#' A list with sample profiles of wood density with several rings
 #' 
-#' The profile contain several distinct behaviours in different seasons.
+#' The profiles contain several distinct behaviours in different seasons.
 #' 
-#' @format A data.frame with more than 4K points of measurement
+#' @format A list of data frames with more than 4K points of measurement
 #' \itemize{
 #'   \item{\code{x}}{  index of the point}
 #'   \item{\code{density}}{  density value}
 #' }
-#' @name prof
+#' @name profiles
 #' @docType data
 #' @examples 
-#' data(profile)
-#' with(prof, plot(x, density, type = 'l'))
+#' data(profiles)
+#' str(profiles)
+#' par(mfrow = c(length(profiles), 1))
+#' lapply(profiles, function(p) with(p, plot(x, density, type = 'l')))
 NULL

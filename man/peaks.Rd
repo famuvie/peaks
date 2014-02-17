@@ -26,10 +26,10 @@ neighbours in a window defined by \code{span.abs}. Peaks
 are local maxima with values above the given threshold.
 }
 \examples{
-data(profile)
-pks <- peaks(prof$density, span = 60, threshold = .35)
-with(prof, plot(x, density, type = 'l'))
-with(prof[pks, ], points(x, density, pch = 19, col = 'red'))
+data(profiles)
+pks <- peaks(profiles[[1]]$density, span = 60, threshold = .35)
+with(profiles[[1]], plot(x, density, type = 'l'))
+with(profiles[[1]][pks, ], points(x, density, pch = 19, col = 'red'))
 }
 \references{
 For this function we re-used code from the former CRAN

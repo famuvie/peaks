@@ -16,10 +16,10 @@
 #' @export
 #' @useDynLib peaks
 #' @examples
-#' data(profile)
-#' pks <- peaks(prof$density, span = 60, threshold = .35)
-#' with(prof, plot(x, density, type = 'l'))
-#' with(prof[pks, ], points(x, density, pch = 19, col = 'red'))
+#' data(profiles)
+#' pks <- peaks(profiles[[1]]$density, span = 60, threshold = .35)
+#' with(profiles[[1]], plot(x, density, type = 'l'))
+#' with(profiles[[1]][pks, ], points(x, density, pch = 19, col = 'red'))
 peaks <- function(x, span.abs, threshold = 0) {
   pks <- ppc.peaks(x, span = span.abs/length(x))
   trs <- x > threshold
